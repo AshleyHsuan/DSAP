@@ -1,4 +1,4 @@
-# [Personal Study Time Tracker]
+# Personal Study Time Tracker
 
 ## Proposal Report
 
