@@ -21,7 +21,8 @@ void printMenu() {
     std::cout << "  5. Sort by Stress Value\n";
     std::cout << "  6. Sort by Weighted Score (custom weights)\n";
     std::cout << "  7. Compare All 3 Sort Methods\n";
-    std::cout << "  8. Benchmark Performance\n";
+    std::cout << "  8. Algorithm Comparison (std::sort vs Bubble vs PriorityQueue)\n";
+    std::cout << "  9. Simulate Execution & Compare Methods\n";
     std::cout << "  0. Exit\n";
     std::cout << "========================================\n";
     std::cout << "Enter option: ";
@@ -130,9 +131,10 @@ int main() {
             break;
         }
         case 8:
-            std::cout << "\n=== Benchmark: Sorting performance at different sizes ===\n";
-            for (int n : {100, 1000, 10000, 100000})
-                mgr.benchmarkSort(n);
+            mgr.benchmarkAlgorithms();
+            break;
+        case 9:
+            mgr.compareSimulation();
             break;
         case 0:
             std::cout << "Goodbye!\n";
